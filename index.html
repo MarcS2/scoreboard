@@ -14,39 +14,43 @@
 
 <body>
 
-  <header>
 
+  <header class="container-fluid">
+    <div class="row text-end">
+      <div class="col-12">
+        <button class="btn bg-danger m-5" type="button" onclick="resetScore()">Reset</button>
+      </div>
+    </div>
   </header>
 
-  <main class="container-fluid">
-    <div class="row">
+  <main class="container-fluid bgImg">
+    <div class="row text-center">
       <!-- SECTION Points -->
       <div class="col-6">
-        <p id="homePoints">0</p>
+        <h1 class="text-white my-5">Home</h1>
+        <p id="homePoints" class="text-white  mb-5">0</p>
       </div>
       <div class="col-6">
-        <p id="awayPoints">0</p>
+        <h1 class="text-white my-5">Away</h1>
+        <p id="awayPoints" class="text-white ">0</p>
       </div>
     </div>
     <!-- !SECTION -->
-    <div class="row">
+    <div class="row text-center">
       <!-- SECTION home buttons -->
-      <div class="col-6">
-        <button type="button" onclick="homeScore()">Home +1</button>
-        <button type="button" onclick="bigHomeScore()">Home +3</button>
+      <div class="col-6 ">
+        <button class="btn bg-success text-white mx-3" type="button" onclick="updateScore('home')">Home +1</button>
+        <button class="btn bg-success text-white mx-3" type="button" onclick="updateBigScore('home')">Home +3</button>
       </div>
       <!-- !SECTION -->
       <!-- SECTION away buttons -->
       <div class="col-6">
-        <button type="button" onclick="awayScore()">Away +1</button>
-        <button type="button" onclick="bigAwayScore()">Away +3</button>
+        <button class="btn bg-success text-white mx-3" type="button" onclick="updateScore('away')">Away +1</button>
+        <button class="btn bg-success text-white mx-3" type="button" onclick="updateBigScore('away')">Away +3</button>
       </div>
       <!-- !SECTION -->
     </div>
   </main>
-  <footer>
-
-  </footer>
   <!-- JS script -->
   <script src="app.js"></script>
 </body>
