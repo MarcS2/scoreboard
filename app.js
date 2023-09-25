@@ -64,6 +64,19 @@ function updateBigScore(teamName) {
   }
 }
 
+function removePoints(teamName) {
+  if (teamName == 'home') {
+    const score = document.getElementById('homePoints')
+    home--
+    // @ts-ignore
+    score.innerText = home
+  } else if (teamName == 'away') {
+    const score = document.getElementById('awayPoints')
+    away--
+    // @ts-ignore
+    score.innerText = away
+  }
+}
 // !SECTION
 
 
