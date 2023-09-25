@@ -20,14 +20,26 @@
 
   <main class="container-fluid">
     <div class="row">
-      <!-- SECTION home score -->
-      <div class="col-12">
-        <button type="button" onclick="homeScore()">Home</button>
+      <!-- SECTION Points -->
+      <div class="col-6">
+        <p id="homePoints">0</p>
+      </div>
+      <div class="col-6">
+        <p id="awayPoints">0</p>
+      </div>
+    </div>
+    <!-- !SECTION -->
+    <div class="row">
+      <!-- SECTION home buttons -->
+      <div class="col-6">
+        <button type="button" onclick="homeScore()">Home +1</button>
+        <button type="button" onclick="bigHomeScore()">Home +3</button>
       </div>
       <!-- !SECTION -->
-      <!-- SECTION away score -->
-      <div class="col-12">
-        <button type="button"></button>
+      <!-- SECTION away buttons -->
+      <div class="col-6">
+        <button type="button" onclick="awayScore()">Away +1</button>
+        <button type="button" onclick="bigAwayScore()">Away +3</button>
       </div>
       <!-- !SECTION -->
     </div>
